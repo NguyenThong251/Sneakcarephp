@@ -1,0 +1,107 @@
+main {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.main__container {
+  padding: 2rem;
+}
+.danhmuc {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+.error {
+  color: red;
+}
+.category {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.category:last-child {
+  border: none;
+}
+.mtdm {
+  /* border: none; */
+}
+.category h3 {
+  margin: 0;
+}
+
+.category p {
+  color: #888;
+  margin: 0;
+}
+
+.add-category-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.edit-btn,
+.delete-btn {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.delete-btn {
+  background-color: #f44336;
+}
+.edit-btn a,
+.delete-btn a {
+  text-decoration: none;
+  color: white;
+}
+/* CSS cho form thêm danh mục */
+#add-category-form {
+  margin-top: 20px;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formmain {
+  margin-top: 2rem;
+  width: 100%;
+}
+form {
+  padding-bottom: 5rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.add-category-btn {
+  padding: 8px 16px;
+  cursor: pointer;
+  background-color: #008cba;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}

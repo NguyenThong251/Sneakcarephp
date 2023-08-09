@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+      integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/signup.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>signup</title>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="header-main grid">
+          <div class="header__logo">
+            <img src="../img/logo.png" alt="" class="header__logo-img" />
+          </div>
+          <nav class="header__nav">
+            <ul class="header__nav-ul">
+              <li class="header__nav-li">
+                <a href="#" class="header__nav-item">Trang chủ</a>
+              </li>
+              <li class="header__nav-li">
+                <a href="#" class="header__nav-item">Nam</a>
+              </li>
+              <li class="header__nav-li">
+                <a href="#" class="header__nav-item">Nữ</a>
+              </li>
+              <li class="header__nav-li">
+                <a href="#" class="header__nav-item">Giới thiệu</a>
+              </li>
+              <li class="header__nav-li">
+                <a href="#" class="header__nav-item">Bộ sưu tầm</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__right">
+            <!-- icon list -->
+            <div class="menu__nav_list">
+              <i class="menu__nav_list-icon bi bi-list"></i>
+            </div>
+            <div class="header__right-user">
+              <a href="#">
+                <i class="header__right-icon bi bi-person-circle"></i
+              ></a>
+            </div>
+            <div class="header__right-cart">
+              <a href="#">
+                <i class="header__right-icon bi bi-cart-check-fill"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="content__header">
+        <span class="content__header-span"
+          ><h3 class="content__header-h3">FREE DELIVERY</h3>
+          in orders over $400 - Buy with confidence: Free Return and
+          cashback</span
+        >
+      </div>
+      <!-- main -->
+      <div class="signup__container grid">
+        <div class="signup__container-from">
+          <div class="signup__left">
+            <div class="button-login">
+              <a href="./login.html" class="login__link"
+                ><button class="login_button btn">Login</button></a
+              >
+            </div>
+            <div class="signup__left_main-logo">
+              <img
+                src="../img/logosignup.png"
+                alt=""
+                class="signup__left_main-img"
+              />
+            </div>
+            <div class="signup__left_main">
+              <div class="signup__left_find">
+                <i class="signup__left_find-icon bi bi-geo-alt-fill"></i>
+                <h3 class="status">
+                  <button class="find-state">Find my state</button>
+                </h3>
+              </div>
+              <div class="signup__left_name">
+                <input
+                  type="text"
+                  name=""
+                  id="firstname"
+                  placeholder="First Name"
+                />
+                <input
+                  type="text"
+                  name=""
+                  id="lastname"
+                  placeholder="Last Name"
+                />
+              </div>
+              <input
+                onfocusout="validateEmail()"
+                type="email"
+                class="email"
+                id="emailInput"
+                placeholder="name@example.com"
+              />
+              <p id="result"></p>
+              <div class="pass__file">
+                <div class="pass-field">
+                  <input
+                    type="password"
+                    class="password"
+                    placeholder="Password"
+                  /><i class="bi bi-eye"></i>
+                </div>
+                <div class="content__pass">
+                  <p class="content__pass-title">Mật khẩu phải chứa</p>
+                  <ul class="content__pass-list">
+                    <li>
+                      <i class="bi bi-circle-fill"></i>
+                      <p>Độ dài tối thiểu 8 ký tự</p>
+                    </li>
+                    <li>
+                      <i class="bi bi-circle-fill"></i>
+                      <p>Ít nhất 1 chữ thường (0...9)</p>
+                    </li>
+                    <li>
+                      <i class="bi bi-circle-fill"></i>
+                      <p>Độ dài tối thiểu 8 ký tự</p>
+                    </li>
+                    <li>
+                      <i class="bi bi-circle-fill"></i>
+                      <p>Ít nhất 1 ký hiệu đặc biệt(!...$)</p>
+                    </li>
+                    <li>
+                      <i class="bi bi-circle-fill"></i>
+                      <p>Ít nhất 1 độ dài chữ hoa (A...Z)</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <a href="#" class="signup__link"
+                ><button class="signup_button btn">Đăng kí</button></a
+              >
+            </div>
+          </div>
+          <div class="signup__right">
+            <img src="../img/imgsignup.png" alt="" class="signup__right_img" />
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+    </div>
+    <!-- <canvas> </canvas> -->
+
+    <script src="../js/index.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/location.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
